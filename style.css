@@ -1,0 +1,39 @@
+h2 {
+  font-family: Playfair Display;
+  font-size: 36px;
+  line-height: 54px;
+  color: #FFFFFF;
+}
+
+p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.banner {
+  height: 100vh;
+  background: url(img/bottles.jpg);
+  background-repeat: no-repeat;
+}
+
+.quote {
+  background-color: #282828;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.quote__box {
+  border: 1px solid #FFFFFF;
+}
+/*# sourceMappingURL=style.css.map */
