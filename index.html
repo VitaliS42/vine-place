@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Le Corte</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -19,30 +20,100 @@
     </header>
     <main>
         <section class="banner"> <!-- Главный экран -->
-            <div class="container">
-
+            <div class="banner__flex container">
+                <ul class="banner__menu">
+                    <li><a class="banner__buttons" href="#news">Винная&nbsp;карта</a></li>
+                    <li><a class="banner__buttons" href="#reservation">Дегустация</a></li>
+                </ul>
             </div>
         </section>
 
         <section class="quote"> <!-- Цитата о вине -->
             <div class="quote__box container">
-                <h2>Лучший вкус, это вкус долголетнего вина</h2>
+                <h2 class="quote__header">Лучший вкус, это вкус долголетнего вина</h2>
                 <hr class="quote__line" width="160px">
                 <p class="quote__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat enim tortor in hac id imperdiet adipiscing. Pellentesque nisi, mi sit non sit sed fermentum. Felis adipiscing morbi sodales ac. Mauris dictumst risus pulvinar blandit elit. Vestibulum quam ultrices nascetur et viverra suscipit. Proin vitae aliquet leo aliquam amet rutrum. Lectus auctor purus ultrices enim ultrices. Augue fringilla tellus tortor orci ultrices sed. Viverra cras sapien, pellentesque viverra malesuada. Tellus dolor, eget vitae dignissim molestie eget sit duis. Vitae dui vel pretium euismod diam. Pellentesque amet, lacus, amet, quis risus. Pellentesque scelerisque nunc, orci aliquam quis.</p>
-                <img src="img/glass.jpg" alt="бокал">
+                <img class="quote__img" src="img/glass.png" alt="бокал" width="160" height="160">
             </div>
         </section>
 
-        <section class="news"> <!-- Новинки коллекции -->
-
+        <section class="news" id="news"> <!-- Новинки коллекции -->
+            <div class="news__box container">
+                <hr class="news__line-top">
+                <div class="news__flex">
+                    <div class="news__article">
+                        <p>Новинки коллекций</p>
+                        <h2>Март 1980
+                            Урожай Марселя</h2>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat enim tortor in hac id imperdiet adipiscing. Pellentesque nisi, mi sit non sit sed fermentum. Felis adipiscing morbi sodales ac. </p>
+                        <table>
+                            <tr>
+                                <td>1980</td>
+                                <td>
+                                    <h2>Colli Euganei Bianco Ca' Lustra 1980</h2>
+                                    <p>Красочная бутылка вина из Марселя</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1980</td>
+                                <td>
+                                    <h2>Colli Euganei Bianco Ca' Lustra 1980</h2>
+                                    <p>Красочная бутылка вина из Марселя</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1980</td>
+                                <td>
+                                    <h2>Colli Euganei Bianco Ca' Lustra 1980</h2>
+                                    <p>Красочная бутылка вина из Марселя</p>
+                                </td>
+                            </tr>
+                        </table>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat enim tortor in hac id imperdiet adipiscing. Pellentesque nisi, mi sit non sit sed fermentum. Felis adipiscing morbi sodales ac. </p>
+                        <a class="banner__buttons" href="#">Узнать подробнее</a>
+                    </div>
+                    <div class="news__gallery">
+                        <img src="img/gallery-glass.jpg" alt="">
+                        <img src="img/gallery-bottles.jpg" alt="">
+                        <img src="img/gallery-bottles-2.jpg" alt="">
+                    </div>
+                </div>
+            <hr class="news__line-bottom">
+            </div>
+            
         </section>
 
-        <section class="reservation"> <!-- Записаться на дегустацию -->
-
+        <section class="reservation" id="reservation"> <!-- Записаться на дегустацию -->
+            <div class="reservation__box container">
+                <img src="img/grape.jpg" alt="">
+                <img src="img/barrel.jpg" alt="">
+                <h2>Запись на дегустацию</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat enim tortor in hac id imperdiet adipiscing. Pellentesque nisi, mi sit non sit sed fermentum. </p>
+                <form action="#">
+                    <input type="text">
+                    <input type="phone">
+                    <button type="submit">Записаться</button>
+                </form>
+            </div>
         </section>
     </main>
-    <footer>
-
+    <footer class="footer">
+        <div class="footer__box container">
+            <hr>
+            <nav>
+                <ul>
+                    <li><a href="">Главная</a></li>
+                    <li><a href="">Каталог</a></li>
+                    <li><a href="">Поставщики</a></li>
+                    <li><a href="">Коллекции</a></li>
+                    <li><a href="">Дегустация</a></li>
+                    <li><a href="">Коллекция 2020</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
     </footer>
 </body>
 </html>
