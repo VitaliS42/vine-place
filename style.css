@@ -185,7 +185,7 @@ hr {
 }
 
 .reservation__box {
-  border: 1px solid #FFFFFF;
+  border: 3px solid #FFFFFF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -197,6 +197,110 @@ hr {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+}
+
+.reservation__img-left {
+  position: absolute;
+  top: -70px;
+  left: -35px;
+}
+
+.reservation__img-right {
+  position: absolute;
+  top: -70px;
+  right: -50px;
+}
+
+.reservation__header {
+  position: absolute;
+  top: -30px;
+  width: 490px;
+  background-color: #282828;
+  text-align: center;
+}
+
+.reservation__header-style {
+  font-size: 36px;
+}
+
+.reservation__line {
+  width: 118px;
+  background-color: #FFFFFF;
+  margin-top: 65px;
+}
+
+.reservation__text {
+  width: 539px;
+  padding: 40px 0 80px 0;
+}
+
+.reservation__container {
+  width: 539px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 80px;
+}
+
+.reservation__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.reservation__input {
+  background-color: #282828;
+  width: 255px;
+  height: 40px;
+  border: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-bottom: 1px solid #FFFFFF;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+
+.reservation__input::-webkit-input-placeholder {
+  font-size: 13px;
+  color: #FFFFFF;
+}
+
+.reservation__input:-ms-input-placeholder {
+  font-size: 13px;
+  color: #FFFFFF;
+}
+
+.reservation__input::-ms-input-placeholder {
+  font-size: 13px;
+  color: #FFFFFF;
+}
+
+.reservation__input::placeholder {
+  font-size: 13px;
+  color: #FFFFFF;
+}
+
+.reservation__button {
+  text-transform: uppercase;
+  padding: 15px 0;
+  background-color: #282828;
+  border: 1px solid #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .footer {

@@ -24,6 +24,7 @@ p {
     line-height: 150%;
     color: $text-color;
 }
+
 hr {
     height: 1px;
     border: 0;
@@ -149,11 +150,77 @@ hr {
     background-color: $background-color;
     padding: 129px 0 100px 0;
     &__box {
-        border: 1px solid $text-color;
+        border: 3px solid $text-color;
         display: flex;
         flex-direction: column;
         align-items: center;
         position: relative;
+    }
+    &__img-left {
+        position: absolute;
+        top: -70px;
+        left: -35px;
+    }
+    &__img-right {
+        position: absolute;
+        top: -70px;
+        right: -50px;
+    }
+    &__header {
+        position: absolute;
+        top: -30px;
+        width: 490px;
+        background-color: $background-color;
+        text-align: center;
+    }
+    &__header-style {
+        font-size: 36px;
+    }
+    &__line {
+        width: 118px;
+        background-color: $text-color;
+        margin-top: 65px;
+    }
+    &__text {
+        width: 539px;
+        padding: 40px 0 80px 0;
+    }
+    &__container {
+        width: 539px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 80px;
+    }
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 50px;
+    }
+    &__input {
+        background-color: $background-color;
+        width: 255px;
+        height: 40px;
+        border: 0;
+        box-shadow: none;
+        border-bottom: 1px solid $text-color;
+        font-family: $t-font;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 150%;
+        color: $text-color;
+    }
+    &__input::placeholder {
+        font-size: 13px;
+        color: $text-color;
+    }
+    &__button {
+        text-transform: uppercase;
+        padding: 15px 0;
+        background-color: $background-color;
+        border: 1px solid $text-color;
+        box-sizing: border-box;
+        box-shadow: none;
     }
 }
 

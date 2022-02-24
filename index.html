@@ -18,6 +18,7 @@
 
         </nav>
     </header>
+
     <main>
         <section class="welcome"> <!-- Главный экран -->
             <div class="welcome__flex container">
@@ -86,20 +87,25 @@
 
         <section class="reservation" id="reservation"> <!-- Записаться на дегустацию -->
             <div class="reservation__box container">
-                <img src="img/grape.jpg" alt="">
-                <img src="img/barrel.jpg" alt="">
-                <h2>Запись на дегустацию</h2>
-                <hr>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat enim tortor in hac id imperdiet adipiscing. Pellentesque nisi, mi sit non sit sed fermentum. </p>
-                <form action="#">
-                    <input type="text">
-                    <input type="phone">
-                    <button type="submit">Записаться</button>
+                <img class="reservation__img-left" src="img/grape.jpg" alt="grape">
+                <img class="reservation__img-right" src="img/barrel.jpg" alt="barrel">
+                <div class="reservation__header">
+                    <h2 class="reservation__header-style">Запись&nbsp;на&nbsp;дегустацию</h2>
+                </div>
+                <hr class="reservation__line">
+                <p class="reservation__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat enim tortor in hac id imperdiet adipiscing. Pellentesque nisi, mi sit non sit sed fermentum. </p>
+                <form class="reservation__container" action="#">
+                    <div class="reservation__flex">
+                        <input class="reservation__input" type="text" placeholder="Имя">
+                        <input class="reservation__input" type="tel" placeholder="Телефон">
+                    </div>
+                    <button class="reservation__button" type="submit"><p class="big-text">Записаться</p></button>
                 </form>
             </div>
         </section>
     </main>
-    <footer class="footer">
+
+    <footer class="footer"> <!-- Футер -->
         <div class="footer__box container">
             <hr>
             <nav>
