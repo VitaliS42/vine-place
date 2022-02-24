@@ -14,7 +14,22 @@ p {
   font-style: normal;
   font-weight: normal;
   text-align: center;
+  line-height: 150%;
   color: #FFFFFF;
+}
+
+hr {
+  height: 1px;
+  border: 0;
+  background-color: #FFFFFF;
+}
+
+.small-text {
+  font-size: 14px;
+}
+
+.big-text {
+  font-size: 16px;
 }
 
 .visually-hidden {
@@ -28,13 +43,13 @@ p {
   margin: 0 auto;
 }
 
-.banner {
+.welcome {
   height: 900px;
   background: url(img/bottles.jpg);
   background-repeat: no-repeat;
 }
 
-.banner__flex {
+.welcome__flex {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -47,7 +62,7 @@ p {
           justify-content: center;
 }
 
-.banner__menu {
+.welcome__menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,7 +73,7 @@ p {
   padding-bottom: 150px;
 }
 
-.banner__buttons {
+.welcome__buttons {
   display: inline-block;
   text-decoration: none;
   padding: 15px 30px;
@@ -148,6 +163,10 @@ p {
   width: 445px;
 }
 
+.news__text {
+  color: #282828;
+}
+
 .news__gallery {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -177,10 +196,63 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .footer {
   background-color: #998431;
   padding: 50px 0;
+}
+
+.footer__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 19px 70px 20px 70px;
+}
+
+.footer__link {
+  text-decoration: none;
+}
+
+.footer__contacts-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__contacts-item {
+  text-transform: uppercase;
+  border-right: 1px solid #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 19px 57px 12px 57px;
+  text-align: center;
+}
+
+.footer__contacts-item:last-child {
+  border-right: 0;
+}
+
+.footer__social {
+  width: 146px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__social-item {
+  margin-top: -3px;
 }
 /*# sourceMappingURL=style.css.map */

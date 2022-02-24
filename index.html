@@ -19,11 +19,11 @@
         </nav>
     </header>
     <main>
-        <section class="banner"> <!-- Главный экран -->
-            <div class="banner__flex container">
-                <ul class="banner__menu">
-                    <li><a class="banner__buttons" href="#news">Винная&nbsp;карта</a></li>
-                    <li><a class="banner__buttons" href="#reservation">Дегустация</a></li>
+        <section class="welcome"> <!-- Главный экран -->
+            <div class="welcome__flex container">
+                <ul class="welcome__menu">
+                    <li><a class="welcome__buttons" href="#news">Винная&nbsp;карта</a></li>
+                    <li><a class="welcome__buttons" href="#reservation">Дегустация</a></li>
                 </ul>
             </div>
         </section>
@@ -42,35 +42,35 @@
                 <hr class="news__line-top">
                 <div class="news__flex">
                     <div class="news__article">
-                        <p>Новинки коллекций</p>
+                        <p class="news__text big-text">Новинки коллекций</p>
                         <h2>Март 1980
                             Урожай Марселя</h2>
                         <hr>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat enim tortor in hac id imperdiet adipiscing. Pellentesque nisi, mi sit non sit sed fermentum. Felis adipiscing morbi sodales ac. </p>
+                        <p class="news__text small-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat enim tortor in hac id imperdiet adipiscing. Pellentesque nisi, mi sit non sit sed fermentum. Felis adipiscing morbi sodales ac. </p>
                         <table>
                             <tr>
                                 <td>1980</td>
                                 <td>
-                                    <h2>Colli Euganei Bianco Ca' Lustra 1980</h2>
-                                    <p>Красочная бутылка вина из Марселя</p>
+                                    <h3>Colli Euganei Bianco Ca' Lustra 1980</h3>
+                                    <p class="news__text small-text">Красочная бутылка вина из Марселя</p>
                                 </td>
                             </tr>
                             <tr>
                                 <td>1980</td>
                                 <td>
-                                    <h2>Colli Euganei Bianco Ca' Lustra 1980</h2>
-                                    <p>Красочная бутылка вина из Марселя</p>
+                                    <h3>Colli Euganei Bianco Ca' Lustra 1980</h3>
+                                    <p class="news__text small-text">Красочная бутылка вина из Марселя</p>
                                 </td>
                             </tr>
                             <tr>
                                 <td>1980</td>
                                 <td>
-                                    <h2>Colli Euganei Bianco Ca' Lustra 1980</h2>
-                                    <p>Красочная бутылка вина из Марселя</p>
+                                    <h3>Colli Euganei Bianco Ca' Lustra 1980</h3>
+                                    <p class="news__text small-text">Красочная бутылка вина из Марселя</p>
                                 </td>
                             </tr>
                         </table>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat enim tortor in hac id imperdiet adipiscing. Pellentesque nisi, mi sit non sit sed fermentum. Felis adipiscing morbi sodales ac. </p>
+                        <p class="news__text small-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat enim tortor in hac id imperdiet adipiscing. Pellentesque nisi, mi sit non sit sed fermentum. Felis adipiscing morbi sodales ac. </p>
                         <a class="banner__buttons" href="#">Узнать подробнее</a>
                     </div>
                     <div class="news__gallery">
@@ -103,16 +103,44 @@
         <div class="footer__box container">
             <hr>
             <nav>
-                <ul>
-                    <li><a href="">Главная</a></li>
-                    <li><a href="">Каталог</a></li>
-                    <li><a href="">Поставщики</a></li>
-                    <li><a href="">Коллекции</a></li>
-                    <li><a href="">Дегустация</a></li>
-                    <li><a href="">Коллекция 2020</a></li>
-                    <li><a href="">Контакты</a></li>
+                <ul class="footer__list">
+                    <li><a class="footer__link" href=""><p class="small-text">Главная</p></a></li>
+                    <li><a class="footer__link" href=""><p class="small-text">Каталог</p></a></li>
+                    <li><a class="footer__link" href=""><p class="small-text">Поставщики</p></a></li>
+                    <li><a class="footer__link" href=""><p class="small-text">Коллекции</p></a></li>
+                    <li><a class="footer__link" href=""><p class="small-text">Дегустация</p></a></li>
+                    <li><a class="footer__link" href=""><p class="small-text">Коллекция&nbsp;2020</p></a></li>
+                    <li><a class="footer__link" href=""><p class="small-text">Контакты</p></a></li>
                 </ul>
             </nav>
+            <dir class="footer__contacts">
+                <hr>
+                <ul class="footer__contacts-list">
+                    <li class="footer__contacts-item"><p class="small-text">винный бутик LE CORTE</p></li>
+                    <li class="footer__contacts-item"><p class="small-text">8 (812) 123-45-67</p></li>
+                    <li class="footer__contacts-item">
+                        <ul class="footer__social">
+                            <li class="footer__social-item">
+                                <a href="#">
+                                    <img src="img/vector-youtube.svg" alt="youtube"width="26" height="26">
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="#">
+                                    <img src="img/vector-vk.svg" alt="vk"width="26" height="26">
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="">
+                                    <img src="img/vector-fb.svg" alt="facebook"width="26" height="26">
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer__contacts-item"><p class="small-text">© le-corte.ru</p></li>
+                </ul>
+                <hr>
+            </dir>
         </div>
     </footer>
 </body>

@@ -21,7 +21,21 @@ p {
     font-style: normal;
     font-weight: normal;
     text-align: center;
+    line-height: 150%;
     color: $text-color;
+}
+hr {
+    height: 1px;
+    border: 0;
+    background-color: $text-color;
+}
+
+.small-text{
+    font-size: 14px;
+}
+
+.big-text {
+    font-size: 16px;
 }
 
 .visually-hidden {
@@ -34,7 +48,7 @@ p {
     margin: 0 auto;
 }
 
-.banner {
+.welcome {
     height: 900px;
     background: url(img/bottles.jpg);
     background-repeat: no-repeat;
@@ -120,7 +134,9 @@ p {
     &__article {
         width: 445px;
     }
-
+    &__text {
+        color: $background-color;
+    }
     &__gallery {
         display: flex;
         flex-wrap: wrap;
@@ -137,10 +153,50 @@ p {
         display: flex;
         flex-direction: column;
         align-items: center;
+        position: relative;
     }
 }
 
 .footer {
     background-color: $footer-color;
     padding: 50px 0;
+    &__box {
+
+    }
+    &__list {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        padding: 19px 70px 20px 70px;
+    }
+    &__link {
+        text-decoration: none;
+    }
+    &__contacts {
+
+    }
+    &__contacts-list {
+        list-style: none;
+        display: flex;
+        justify-content: center
+    }
+    &__contacts-item {
+        text-transform: uppercase;
+        border-right: 1px solid $text-color;
+        box-sizing: border-box;
+        padding: 19px 57px 12px 57px;
+        text-align: center;
+    }
+    &__contacts-item:last-child {
+        border-right: 0;
+    }
+    &__social {
+        width: 146px;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__social-item {
+        margin-top: -3px;
+    }
 }
