@@ -36,7 +36,7 @@ p {
 hr {
     height: 1px;
     border: 0;
-    background-color: #FFFFFF;
+    background-color: $text-color;
 }
 
 .small-text{
@@ -53,11 +53,17 @@ hr {
 }
 
 .container {
-    width: 1110px;
+    max-width: 1110px;
     margin: 0 auto;
+}
+@media (max-width:1160px) {
+    .container {
+        margin: 0 20px;
+    }
 }
 
 .header {
+    width: 100%;
     &__contacts {
         display: flex;
         justify-content: space-between;
@@ -79,6 +85,9 @@ hr {
     &__item:last-child {
         border-right: 0;
     }
+    &__link {
+        text-decoration: none;
+    }
 }
 .welcome {
     height: 900px;
@@ -92,6 +101,7 @@ hr {
         align-items: center; 
     }
     &__menu {
+        list-style: none;
         display: flex;
         justify-content: space-between;
         width: 400px;
@@ -129,7 +139,9 @@ hr {
         display: inline-block;
         padding: 60px 0 40px 0;
     }
-    
+    &__line {
+        width: 160px;
+    }
     &__text {
         max-width: 733px;
         text-align: center;
@@ -139,6 +151,17 @@ hr {
     }
     &__img {
         padding-bottom: 60px;
+    }
+}
+@media (max-width:840px) {
+    .quote {
+        &__text {
+            max-width: 733px;
+            text-align: center;
+            padding: 40px 30px 50px 30px;
+            font-size: 16px;
+            line-height: 24px;
+        }
     }
 }
 
@@ -196,13 +219,24 @@ hr {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        width: 540px;
+        max-width: 540px;
     }
     &__gallery-bottom {
         padding-top: 30px;
     }
     &__gallery-bottom:first-child {
         padding-right: 30px;
+    }
+}
+@media (max-width:1200px) {
+    .news {
+        &__gallery {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__gallery-top {
+            width: 255px;
+        }
     }
 }
 
@@ -238,7 +272,7 @@ hr {
     }
     &__line {
         width: 118px;
-        background-color: #FFFFFF;
+        background-color: $text-color;
         margin-top: 65px;
     }
     &__text {
@@ -274,13 +308,12 @@ hr {
         font-size: 13px;
         color: $text-color;
     }
-    &__input:focus {
-        border: 0;
-        box-shadow: none;
-        border-bottom: 1px solid $text-color;
-    }
     &__button {
         text-transform: uppercase;
+        font-family: $t-font;
+        font-size: 16px;
+        line-height: 150%;
+        color: $text-color;
         padding: 15px 0;
         background-color: $background-color;
         border: 1px solid $text-color;
@@ -289,36 +322,42 @@ hr {
         cursor: pointer;
     }
 }
+@media (max-width:1260px) {
+    .reservation {
+        &__img-left {
+            display: none;
+        }
+        &__img-right {
+            display: none;
+        }
+    }
+}
 
 .footer {
     background-color: $footer-color;
     padding: 50px 0;
-    &__box {
-
-    }
     &__list {
         list-style: none;
         display: flex;
         justify-content: space-around;
-        padding: 19px 70px 20px 70px;
+        padding: 19px 0 20px 0;
     }
     &__link {
         text-decoration: none;
     }
-    &__contacts {
-
-    }
     &__contacts-list {
         list-style: none;
-        display: flex;
-        justify-content: center
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     &__contacts-item {
         text-transform: uppercase;
         border-right: 1px solid $text-color;
         box-sizing: border-box;
-        padding: 19px 57px 12px 57px;
+        padding: 19px 0 12px 0;
         text-align: center;
+        display: flex;
+        justify-content: center;
     }
     &__contacts-item:last-child {
         border-right: 0;
