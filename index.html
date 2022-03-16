@@ -8,20 +8,30 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-
-        </nav>
-    </header>
-
     <main>
         <section class="welcome"> <!-- Главный экран -->
             <div class="welcome__flex container">
+                <header class="header container">
+                    <div class="header__contacts">
+                        <p class="small-text">Новокузнечный переулок 4/1</p>
+                        <p class="small-text">8 (812) 123-45-67</p>
+                    </div>
+                    <hr>
+                    <nav>
+                        <ul class="header__list">
+                            <li class="header__item"><a class="header__link" href=""><p class="small-text">Каталог</p></a></li>
+                            <li class="header__item"><a class="header__link" href=""><p class="small-text">Доставка</p></a></li>
+                            <li class="header__item"><a class="header__link" href=""><p class="small-text">Коллекции</p></a></li>
+                            <li class="header__item"><a class="header__link" href=""><p class="small-text">Контакты</p></a></li>
+                        </ul>
+                    </nav>
+                    <hr>
+                </header>
                 <ul class="welcome__menu">
                     <li><a class="welcome__buttons" href="#news">Винная&nbsp;карта</a></li>
                     <li><a class="welcome__buttons" href="#reservation">Дегустация</a></li>
@@ -44,27 +54,26 @@
                 <div class="news__flex">
                     <div class="news__article">
                         <p class="news__text big-text">Новинки коллекций</p>
-                        <h2>Март 1980
-                            Урожай Марселя</h2>
-                        <hr>
+                        <h2 class="news__header">Март 1980<br>Урожай Марселя</h2>
+                        <hr class="news__darkline">
                         <p class="news__text small-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat enim tortor in hac id imperdiet adipiscing. Pellentesque nisi, mi sit non sit sed fermentum. Felis adipiscing morbi sodales ac. </p>
-                        <table>
+                        <table class="news__table">
                             <tr>
-                                <td>1980</td>
+                                <td><p class="news__text small-text">1980</p></td>
                                 <td>
                                     <h3>Colli Euganei Bianco Ca' Lustra 1980</h3>
                                     <p class="news__text small-text">Красочная бутылка вина из Марселя</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td>1980</td>
+                                <td><p class="news__text small-text">1980</p></td>
                                 <td>
                                     <h3>Colli Euganei Bianco Ca' Lustra 1980</h3>
                                     <p class="news__text small-text">Красочная бутылка вина из Марселя</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td>1980</td>
+                                <td><p class="news__text small-text">1980</p></td>
                                 <td>
                                     <h3>Colli Euganei Bianco Ca' Lustra 1980</h3>
                                     <p class="news__text small-text">Красочная бутылка вина из Марселя</p>
@@ -72,12 +81,12 @@
                             </tr>
                         </table>
                         <p class="news__text small-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat enim tortor in hac id imperdiet adipiscing. Pellentesque nisi, mi sit non sit sed fermentum. Felis adipiscing morbi sodales ac. </p>
-                        <a class="banner__buttons" href="#">Узнать подробнее</a>
+                        <a class="news__button welcome__buttons" href="#">Узнать подробнее</a>
                     </div>
                     <div class="news__gallery">
-                        <img src="img/gallery-glass.jpg" alt="">
-                        <img src="img/gallery-bottles.jpg" alt="">
-                        <img src="img/gallery-bottles-2.jpg" alt="">
+                        <img src="img/gallery-glass.jpg" alt="Glass">
+                        <img class="news__gallery-bottom" src="img/gallery-bottles.jpg" alt="Bottles">
+                        <img class="news__gallery-bottom" src="img/gallery-bottles-2.jpg" alt="More bottles">
                     </div>
                 </div>
             <hr class="news__line-bottom">
@@ -110,13 +119,13 @@
             <hr>
             <nav>
                 <ul class="footer__list">
-                    <li><a class="footer__link" href=""><p class="small-text">Главная</p></a></li>
-                    <li><a class="footer__link" href=""><p class="small-text">Каталог</p></a></li>
-                    <li><a class="footer__link" href=""><p class="small-text">Поставщики</p></a></li>
-                    <li><a class="footer__link" href=""><p class="small-text">Коллекции</p></a></li>
-                    <li><a class="footer__link" href=""><p class="small-text">Дегустация</p></a></li>
-                    <li><a class="footer__link" href=""><p class="small-text">Коллекция&nbsp;2020</p></a></li>
-                    <li><a class="footer__link" href=""><p class="small-text">Контакты</p></a></li>
+                    <li><a class="footer__link" href="#"><p class="small-text">Главная</p></a></li>
+                    <li><a class="footer__link" href="#"><p class="small-text">Каталог</p></a></li>
+                    <li><a class="footer__link" href="#"><p class="small-text">Поставщики</p></a></li>
+                    <li><a class="footer__link" href="#"><p class="small-text">Коллекции</p></a></li>
+                    <li><a class="footer__link" href="#"><p class="small-text">Дегустация</p></a></li>
+                    <li><a class="footer__link" href="#"><p class="small-text">Коллекция&nbsp;2020</p></a></li>
+                    <li><a class="footer__link" href="#"><p class="small-text">Контакты</p></a></li>
                 </ul>
             </nav>
             <dir class="footer__contacts">
