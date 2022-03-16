@@ -16,8 +16,9 @@
     <main>
         <!-- Главный экран -->
         <section class="welcome"> 
+            <h4 class="visually-hidden">Винный магазин</h4>
             <div class="welcome__flex container">
-                <header class="header container">
+                <div class="header">
                     <div class="header__contacts">
                         <p class="small-text">Новокузнечный переулок 4/1</p>
                         <p class="small-text">8 (812) 123-45-67</p>
@@ -32,7 +33,7 @@
                         </ul>
                     </nav>
                     <hr>
-                </header>
+                </div>
                 <ul class="welcome__menu">
                     <li><a class="welcome__buttons" href="#news">Винная&nbsp;карта</a></li>
                     <li><a class="welcome__buttons" href="#reservation">Дегустация</a></li>
@@ -41,10 +42,11 @@
         </section>
 
         <!-- Цитата о вине -->
-        <section class="quote"> 
+        <section class="quote">
+            <h4 class="visually-hidden">Лучший вкус</h4>
             <div class="quote__box container">
                 <h2 class="quote__header">Лучший вкус, это вкус долголетнего вина</h2>
-                <hr class="quote__line" width="160px">
+                <hr class="quote__line">
                 <p class="quote__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat enim tortor in hac id imperdiet adipiscing. Pellentesque nisi, mi sit non sit sed fermentum. Felis adipiscing morbi sodales ac. Mauris dictumst risus pulvinar blandit elit. Vestibulum quam ultrices nascetur et viverra suscipit. Proin vitae aliquet leo aliquam amet rutrum. Lectus auctor purus ultrices enim ultrices. Augue fringilla tellus tortor orci ultrices sed. Viverra cras sapien, pellentesque viverra malesuada. Tellus dolor, eget vitae dignissim molestie eget sit duis. Vitae dui vel pretium euismod diam. Pellentesque amet, lacus, amet, quis risus. Pellentesque scelerisque nunc, orci aliquam quis.</p>
                 <img class="quote__img" src="img/glass.png" alt="бокал" width="160" height="160">
             </div>
@@ -52,6 +54,7 @@
 
         <!-- Новинки коллекции -->
         <section class="news" id="news"> 
+            <h4 class="visually-hidden">Новинки коллекции</h4>
             <div class="news__box container">
                 <hr class="news__line-top">
                 <div class="news__flex">
@@ -87,7 +90,7 @@
                         <a class="news__button welcome__buttons" href="#">Узнать подробнее</a>
                     </div>
                     <div class="news__gallery">
-                        <img src="img/gallery-glass.jpg" alt="Glass">
+                        <img class="news__gallery-top" src="img/gallery-glass.jpg" alt="Glass">
                         <img class="news__gallery-bottom" src="img/gallery-bottles.jpg" alt="Bottles">
                         <img class="news__gallery-bottom" src="img/gallery-bottles-2.jpg" alt="More bottles">
                     </div>
@@ -99,6 +102,7 @@
 
         <!-- Записаться на дегустацию -->
         <section class="reservation" id="reservation"> 
+            <h4 class="visually-hidden">Запись на дегустацию</h4>
             <div class="reservation__box container">
                 <img class="reservation__img-left" src="img/grape.jpg" alt="grape">
                 <img class="reservation__img-right" src="img/barrel.jpg" alt="barrel">
@@ -112,7 +116,7 @@
                         <input class="reservation__input" type="text" placeholder="Имя">
                         <input class="reservation__input" type="tel" placeholder="Телефон">
                     </div>
-                    <button class="reservation__button" type="submit"><p class="big-text">Записаться</p></button>
+                    <button class="reservation__button" type="submit">Записаться</button>
                 </form>
             </div>
         </section>
@@ -133,26 +137,25 @@
                     <li><a class="footer__link" href="#"><p class="small-text">Контакты</p></a></li>
                 </ul>
             </nav>
-            <dir class="footer__contacts">
-                <hr>
+            <hr>
                 <ul class="footer__contacts-list">
-                    <li class="footer__contacts-item"><p class="small-text">винный бутик LE CORTE</p></li>
+                    <li class="footer__contacts-item"><p class="small-text">винный&nbsp;бутик&nbsp;LE&nbsp;CORTE</p></li>
                     <li class="footer__contacts-item"><p class="small-text">8 (812) 123-45-67</p></li>
                     <li class="footer__contacts-item">
                         <ul class="footer__social">
                             <li class="footer__social-item">
                                 <a href="#">
-                                    <img src="img/vector-youtube.svg" alt="youtube"width="26" height="26">
+                                    <img src="img/vector-youtube.svg" alt="youtube" width="26" height="26">
                                 </a>
                             </li>
                             <li class="footer__social-item">
                                 <a href="#">
-                                    <img src="img/vector-vk.svg" alt="vk"width="26" height="26">
+                                    <img src="img/vector-vk.svg" alt="vk" width="26" height="26">
                                 </a>
                             </li>
                             <li class="footer__social-item">
                                 <a href="">
-                                    <img src="img/vector-fb.svg" alt="facebook"width="26" height="26">
+                                    <img src="img/vector-fb.svg" alt="facebook" width="26" height="26">
                                 </a>
                             </li>
                         </ul>
@@ -160,7 +163,6 @@
                     <li class="footer__contacts-item"><p class="small-text">© le-corte.ru</p></li>
                 </ul>
                 <hr>
-            </dir>
         </div>
     </footer>
 </body>
